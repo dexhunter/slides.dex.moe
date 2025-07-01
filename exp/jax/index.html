@@ -1,0 +1,112 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>MLE-Bench Analysis Report</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 40px; }
+                .header { background-color: #f0f0f0; padding: 20px; border-radius: 8px; }
+                .section { margin: 20px 0; }
+                .metric { display: inline-block; margin: 10px; padding: 10px; 
+                         background-color: #e7f3ff; border-radius: 5px; }
+                .error-type { color: #d73502; font-weight: bold; }
+                .success { color: #28a745; font-weight: bold; }
+                table { border-collapse: collapse; width: 100%; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+            </style>
+        </head>
+        <body>
+            <div class="header">
+                <h1>MLE-Bench Competition Analysis Report</h1>
+                <p>Comprehensive analysis of error patterns and performance metrics</p>
+            </div>
+        
+            <div class="section">
+                <h2>Overview</h2>
+                <div class="metric">Total Competitions: 22</div>
+                <div class="metric">Total Runs: 66</div>
+                <div class="metric">Total Errors: 106</div>
+                <div class="metric success">Successful Runs: 64</div>
+                <div class="metric">Failed Runs: 2</div>
+            </div>
+            
+            <div class="section">
+                <h2>Top Error Types</h2>
+                <table>
+                    <tr><th>Error Type</th><th>Count</th><th>Percentage</th></tr>
+            
+                    <tr>
+                        <td class="error-type">TypeError</td>
+                        <td>45</td>
+                        <td>42.5%</td>
+                    </tr>
+                
+                    <tr>
+                        <td class="error-type">ValueError</td>
+                        <td>21</td>
+                        <td>19.8%</td>
+                    </tr>
+                
+                    <tr>
+                        <td class="error-type">ModuleNotFoundError</td>
+                        <td>12</td>
+                        <td>11.3%</td>
+                    </tr>
+                
+                    <tr>
+                        <td class="error-type">IndexError</td>
+                        <td>6</td>
+                        <td>5.7%</td>
+                    </tr>
+                
+                    <tr>
+                        <td class="error-type">ImportError</td>
+                        <td>5</td>
+                        <td>4.7%</td>
+                    </tr>
+                
+                    <tr>
+                        <td class="error-type">TimeoutError</td>
+                        <td>5</td>
+                        <td>4.7%</td>
+                    </tr>
+                
+                    <tr>
+                        <td class="error-type">XlaRuntimeError</td>
+                        <td>4</td>
+                        <td>3.8%</td>
+                    </tr>
+                
+                    <tr>
+                        <td class="error-type">AttributeError</td>
+                        <td>3</td>
+                        <td>2.8%</td>
+                    </tr>
+                
+                    <tr>
+                        <td class="error-type">KeyError</td>
+                        <td>2</td>
+                        <td>1.9%</td>
+                    </tr>
+                
+                    <tr>
+                        <td class="error-type">LightGBMError</td>
+                        <td>1</td>
+                        <td>0.9%</td>
+                    </tr>
+                </table></div>
+            <div class="section">
+                <h2>Interactive Visualizations</h2>
+                <ul>
+                    <li><a href="dashboard.html">📊 Interactive Dashboard</a></li>
+                    <li><a href="error_types_pie.html">🥧 Error Types Distribution</a></li>
+                    <li><a href="error_timeline.html">📈 Error Timeline by Competition</a></li>
+                    <li><a href="performance_scatter.html">📊 Performance vs Success Rate</a></li>
+                    <li><a href="success_rate_by_competition.html">📊 Success Rate by Competition</a></li>
+                </ul>
+            </div>
+        
+        </body>
+        </html>
+        
